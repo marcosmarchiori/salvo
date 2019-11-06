@@ -313,7 +313,7 @@ public class SalvoApplication extends SpringBootServletInitializer {
                     .antMatchers("/api/players").permitAll()
                     .antMatchers("/web/**").permitAll()
                     .antMatchers("/h2-console/**").permitAll()
-                    .antMatchers("/**").hasAuthority("USER")
+                    .antMatchers("/**").permitAll()
                     .antMatchers("/api/game_view/*").hasAuthority("USER")
                     .and()
 
